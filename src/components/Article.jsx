@@ -31,7 +31,7 @@ const Article = ({header, articleimage, explanation, stackone}) => {
     
       </div>
       <div className="m-[10px] flex justify-center flex-[100%] max-w-full" >
-        <img src={articleimage} alt="Project image" className="w-[300px] md:w-[500px] h-[100%] rounded-[5px]" />
+        <img src={articleimage} alt="The sky" className="w-[300px] md:w-[500px] h-[100%] rounded-[5px]" />
       </div>
     </div>
     </div>

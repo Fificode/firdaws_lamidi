@@ -40,7 +40,7 @@ const ProjectFive = ({header, stackone, stackthree, stacktwo, explanation, proje
         </div>
       </div>
       <div className="m-[10px] flex justify-center flex-[100%] max-w-full">
-        <img src={projectimage} alt="Project image" className="w-[300px] md:w-[500px] h-[100%] rounded-[5px] border-[1px] border-gray" />
+        <img src={projectimage} alt="The Nimsa website landing page" className="w-[300px] md:w-[500px] h-[100%] rounded-[5px] border-[1px] border-gray" />
       </div>
     </div>
   )

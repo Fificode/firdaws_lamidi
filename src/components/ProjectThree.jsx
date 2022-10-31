@@ -39,7 +39,7 @@ const ProjectThree = ({header, stackone, stackthree, stacktwo, stackfour, explan
         </div>
       </div>
       <div className="m-[10px] flex justify-center flex-[100%] max-w-full" >
-        <img src={projectimage} alt="Project image" className="w-[300px] md:w-[500px] h-[100%] rounded-[5px]" />
+        <img src={projectimage} alt="Weather website landing page" className="w-[300px] md:w-[500px] h-[100%] rounded-[5px]" />
       </div>
     </div>
   )
