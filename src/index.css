@@ -10,7 +10,7 @@
   }
 
   li {
-    @apply px-5 py-5 text-[18px] font-[500] text-light-black cursor-pointer tracking-[0.0015em] leading-[29px] ;
+    @apply cursor-pointer tracking-[0.0015em] leading-[29px] ;
   }
 
  
