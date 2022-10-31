@@ -34,6 +34,7 @@ module.exports = {
 'grey' : 'rgba(238, 241, 246, 0.3)',
 'gray' : '#808080',
 'light-gray':'#eeeeee',
+'darkgray': '#a9a9a9',
 
     },
      screens: {

@@ -10,7 +10,9 @@ const handleClick = () => setNav(!nav);
     <div className='w-screen h-[60px] z-10 fixed top-0 bg-almond'>
         <div className="w-full h-full flex justify-between items-center">
 <div className='mx-2 my-[28px] p-[5px] '>
+  <a href="#home">
 <img src={logo} alt="Logo" className='w-[50px] h-[30px] lg:w-[100px] lg:h-[50px]'/>
+</a>
 </div>
 <ul className='lg:flex hidden'>
 {navLinks.map((val) => 
@@ -22,7 +24,7 @@ const handleClick = () => setNav(!nav);
             {val.title}
           </a></li>
         )}
-        <li className='rounded-[10px] px-[20px] py-[5px] text-center border-[2px] border-cognac border-solid mx-[7px] my-[13px] text-[18px] mr-[30px] font-[500] text-light-black hover:text-cognac hover:border-black'><a>Resume</a></li>
+        <li className='rounded-[10px] px-[20px] py-[5px] text-center border-[2px] border-cognac border-solid mx-[7px] my-[13px] text-[18px] mr-[30px] font-[500] text-light-black hover:text-cognac hover:border-black'><a href="https://drive.google.com/file/d/1-WkZd8SRhAsWHGPRsTkvE2y22GjkAJrd/view?usp=share_link">Resume</a></li>
         </ul>
 <div className="lg:hidden" onClick={handleClick}>
     {!nav ? <MenuIcon className='w-10 text-cognac m-2' /> : <XIcon className='w-10 text-cognac m-2'/>}
@@ -40,7 +42,7 @@ const handleClick = () => setNav(!nav);
             </a>
           </li>
         )}
-          <li className='rounded-[10px] px-[20px] py-[5px] text-center border-[2px] border-cognac border-solid mx-[5px] my-[20px] text-[18px] font-[500] text-light-black hover:text-cognac hover:border-black'><a>Resume</a></li>
+          <li className='rounded-[10px] px-[20px] py-[5px] text-center border-[2px] border-cognac border-solid mx-[5px] my-[20px] text-[18px] font-[500] text-light-black hover:text-cognac hover:border-black'><a href="https://drive.google.com/file/d/1-WkZd8SRhAsWHGPRsTkvE2y22GjkAJrd/view?usp=share_link">Resume</a></li>
 </ul>
     </div> 
   )

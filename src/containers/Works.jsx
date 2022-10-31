@@ -21,7 +21,7 @@ import ProjectFive from '../components/ProjectFive'
 
 const Works = () => {
   return (
-    <div>
+    <div id="works">
        <h2 className="lg:text-[40px] text-[30px] text-light-black text-center mt-[80px] mb-[5px] font-[700]">WORKS</h2>
         <div className="flex justify-center"> <p className="border-b-cognac border-solid border-b-[3px] w-[150px] md:w-[300px] text-center rounded-[2px]"></p></div>
 <div className="mt-[30px]">
@@ -29,12 +29,12 @@ const Works = () => {
   <ProjectTwo  projectimage={vetaapp} header="Veta App" stackone={html} stackthree={js} stackfour={react} stackfive={tailwind} explanation="A Landing page built with HTML, Tailwind CSS, Javascript and React js" />
   <ProjectThree projectimage={weatherapp} header="Weather App" stackone={html} stacktwo={css} stackthree={js} stackfour={react} explanation="A Weather Application for getting current weather conditions, hourly and also daily. It was built with HTML, Javascript, React js and Tailwind CSS" />
   <ProjectFour projectimage={tannersapp} header="Tanner's Inn App" stackone={html} stacktwo={css} stackthree={js} stackfour={react} explanation="An Inn Application for booking a room. It was built with HTML, CSS, Javascript and React js" />
-  <ProjectFive projectimage={nimsa} header="NIMSA Journal App" stackone={html} stacktwo={css} stackthree={js}  explanation="An App for publishing journals for medical student. It was built with HTML, CSS and Javascript " />
+  <ProjectFive projectimage={nimsa} header="NIMSA Journal App" stackone={html} stacktwo={css} stackthree={js}  explanation="An App for medical students to publish their journals. It was built with HTML, CSS and Javascript " />
  
   <div className="">
    <h2 className="lg:text-[40px] text-[30px] text-light-black text-center mt-[60px] mb-[5px] font-[700]">ARTICLES</h2>
         <div className="flex justify-center"> <p className="border-b-cognac border-solid border-b-[3px] w-[150px] md:w-[300px] text-center rounded-[2px]"></p></div>
-     <div className="mt-[30px]">  <Article header="How to Build a Weather App using React js" explanation=" An article explaining how to build a weather app using React js published on medium" articleimage={weatherarticle} stackone={medium}/></div>
+     <div className="mt-[30px]">  <Article header="How to Build a Weather App using React js" explanation=" An article explaining how to build a weather app using React js published on Medium" articleimage={weatherarticle} stackone={medium}/></div>
         </div>
 </div>
     </div>
