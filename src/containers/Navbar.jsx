@@ -14,7 +14,7 @@ const handleClick = () => setNav(!nav);
 <img src={logo} alt="Logo" className='w-[50px] h-[30px] lg:w-[100px] lg:h-[50px]'/>
 </a>
 </div>
-<ul className='lg:flex hidden'>
+<ul className='md:flex hidden'>
 {navLinks.map((val) => 
         <li onClick={() => setActiveNav(val.id)} key={val.id} className={`px-5 py-5 text-[18px] font-[500] text-light-black hover:text-cognac
        ${
@@ -26,7 +26,7 @@ const handleClick = () => setNav(!nav);
         )}
         <li className='rounded-[10px] px-[20px] py-[5px] text-center border-[2px] border-cognac border-solid mx-[7px] my-[13px] text-[18px] mr-[30px] font-[500] text-light-black hover:text-cognac hover:border-black'><a href="https://drive.google.com/file/d/1-WkZd8SRhAsWHGPRsTkvE2y22GjkAJrd/view?usp=share_link">Resume</a></li>
         </ul>
-<div className="lg:hidden" onClick={handleClick}>
+<div className="md:hidden" onClick={handleClick}>
     {!nav ? <MenuIcon className='w-10 text-cognac m-2' /> : <XIcon className='w-10 text-cognac m-2'/>}
 </div>
 </div>

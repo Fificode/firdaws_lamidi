@@ -14,13 +14,13 @@ const Header = () => {
       <div className="flex flex-col items-center">
         <img src={bitmoji} alt="Firdaws Lamidi's Bitmoji" className="md:w-[150px] w-[100px] h-[100%] rounded-[50%]" />
         <h1 className="md:text-[50px] text-[35px] text-light-black text-center my-1 font-[600]">Hi, I'm Firdaws Lamidi</h1>
-       <div className="flex justify-center my-1"> <Typed className="text-cognac text-[30px] md:text-[40px] text-center" strings={["Front end Developer.", "Technical Writer.", "Medical Student.",]}
+       <div className="flex justify-center my-1"> <Typed className="text-cognac text-[30px] md:text-[40px] text-center" strings={["Front end Developer.", "Technical Writer."]}
         typeSpeed={100} backSpeed={50} loop/></div>
       
 <ul className="flex justify-between mt-[20px] list-none">
   <li className="px-[5px]"><a href="https://github.com/Fificode"> <img src={github} alt="Github icon" className="fill-black w-[20px] h-[20px] md:w-[30px] md:h-[30px]" /></a></li>
   <li className="px-[5px]"><a href="https://www.linkedin.com/in/firdaws-lamidi-840b57200/"> <img src={linkedin} alt="Linkedin icon" className="fill-black w-[20px] h-[20px] md:w-[30px] md:h-[30px]" /></a></li>
-  <li className="px-[5px]"><a href="#"> <img src={gmail} alt="Gmail icon" className="fill-black w-[20px] h-[20px] md:w-[30px] md:h-[30px]" /></a></li>
+  <li className="px-[5px]"><a href="mailto:lamidifirdaws@gmail.com"> <img src={gmail} alt="Gmail icon" className="fill-black w-[20px] h-[20px] md:w-[30px] md:h-[30px]" /></a></li>
   <li className="px-[5px]"><a href="https://medium.com/@lamidifirdaws"> <img src={medium} alt="Medium icon" className="fill-black w-[20px] h-[20px] md:w-[30px] md:h-[30px]" /></a></li>
   <li className="px-[5px]"><a href="https://twitter.com/_firdawsss"><img src={twitter} alt="Twitter icon" className="fill-black w-[20px] h-[20px] md:w-[30px] md:h-[30px]" /></a></li>
   <li className="px-[5px]"><a href="https://www.instagram.com/nanashee__/"> <img src={instagram} alt="Instagram icon" className="fill-black w-[20px] h-[20px] md:w-[30px] md:h-[30px]" /></a></li>
