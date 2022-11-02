@@ -39,7 +39,7 @@ const onSubmit = (e) => {
   return (
     <div id="contact"><h2 className="lg:text-[40px] md:text-[30px] text-[27px] text-light-black text-center mt-[80px] mb-[5px] font-[700]">LET'S GET IN TOUCH</h2>
         <div className="flex justify-center"> <p className="border-b-cognac border-solid border-b-[3px] w-[300px] md:w-[350px] lg:w-[500px] text-center rounded-[2px]"></p></div>
-        <p className="text-[24px] lg:text-[28px] text-light-black font-[500] text-center mt-[30px] mb-[20px]">I'm always interested in hearing about new projects and opportunities.
+        <p className="text-[23px] lg:text-[28px] text-light-black font-[400] text-center mt-[30px] mb-[20px]">I'm always interested in hearing about new projects and opportunities.
 
 </p>
 <div className="">
@@ -60,7 +60,7 @@ const onSubmit = (e) => {
     onChange={handleChange} autoComplete="off" required/>
     </div>
     <div className="my-[10px] flex justify-center">
-      <textarea name="message"  cols="30" rows="10"  className="md:px-[20px] px-[10px] py-[10px] outline-cognac rounded-[10px]  bg-nude text-darkgray text-[17px] w-[290px] md:w-[610px] lg:w-[810px]" value={toSend.message}
+      <textarea name="message"  cols="30" rows="10"  className="md:px-[20px] px-[10px] py-[10px] outline-cognac rounded-[10px]  bg-nude text-black text-[17px] w-[290px] md:w-[610px] lg:w-[810px]" value={toSend.message}
     onChange={handleChange} placeHolder="Message" autoComplete="off" required></textarea>
      
     </div>
