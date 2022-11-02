@@ -47,21 +47,21 @@ const onSubmit = (e) => {
    
 <div className="flex flex-row ">
     <div className="mx-[5px]">
-      <input type="text" name="Name" className="outline-cognac px-[10px] md:px-[20px] py-[10px] rounded-[10px] bg-nude text-black text-[17px] w-[140px] md:w-[300px] lg:w-[400px]" value={toSend.from_name}
-    onChange={handleChange} placeHolder="Your Name" autoComplete="off"/>
+      <input type="text" name="from_name" className="outline-cognac px-[10px] md:px-[20px] py-[10px] rounded-[10px] bg-nude text-black text-[17px] w-[140px] md:w-[300px] lg:w-[400px]" value={toSend.from_name}
+    onChange={handleChange} placeHolder="Your Name" autoComplete="off" required/>
     </div>
     <div className="mx-[5px]">
-      <input type="email" name="Email" className="outline-cognac px-[10px] md:px-[20px] py-[10px] rounded-[10px] bg-nude text-black text-[17px] w-[140px] md:w-[300px] lg:w-[400px]" placeHolder="Email address" value={toSend.reply_to}
-    onChange={handleChange} autoComplete="off"/>
+      <input type="email" name="reply_to" className="outline-cognac px-[10px] md:px-[20px] py-[10px] rounded-[10px] bg-nude text-black text-[17px] w-[140px] md:w-[300px] lg:w-[400px]" placeHolder="Email address" value={toSend.reply_to}
+    onChange={handleChange} autoComplete="off" required/>
     </div>
 </div>
     <div className="my-[10px]">
-      <input type="text" name="Subject" className="outline-cognac px-[10px] md:px-[20px] py-[10px] rounded-[10px] bg-nude text-black text-[17px] w-[290px] md:w-[610px] lg:w-[810px]" placeHolder="Subject" value={toSend.subject}
-    onChange={handleChange} autoComplete="off"/>
+      <input type="text" name="subject" className="outline-cognac px-[10px] md:px-[20px] py-[10px] rounded-[10px] bg-nude text-black text-[17px] w-[290px] md:w-[610px] lg:w-[810px]" placeHolder="Subject" value={toSend.subject}
+    onChange={handleChange} autoComplete="off" required/>
     </div>
     <div className="my-[10px] flex justify-center">
-      <textarea name="Message"  cols="30" rows="10"  className="md:px-[20px] px-[10px] py-[10px] outline-cognac rounded-[10px]  bg-nude text-darkgray text-[17px] w-[290px] md:w-[610px] lg:w-[810px]" value={toSend.message}
-    onChange={handleChange} placeHolder="Message" autoComplete="off"></textarea>
+      <textarea name="message"  cols="30" rows="10"  className="md:px-[20px] px-[10px] py-[10px] outline-cognac rounded-[10px]  bg-nude text-darkgray text-[17px] w-[290px] md:w-[610px] lg:w-[810px]" value={toSend.message}
+    onChange={handleChange} placeHolder="Message" autoComplete="off" required></textarea>
      
     </div>
     <div className="my-[10px]">
