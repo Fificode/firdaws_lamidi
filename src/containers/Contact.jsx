@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState} from 'react'
 import { send } from 'emailjs-com';
 
 const Contact = () => {
@@ -8,6 +8,7 @@ const Contact = () => {
     message: '',
     reply_to: '',
   });
+  const [status, setStatus] = useState(null);
 
 const onSubmit = (e) => {
     e.preventDefault();
@@ -19,15 +20,17 @@ const onSubmit = (e) => {
     )
       .then((response) => {
         setToSend({
-           from_name: '',
+    from_name: '',
     subject: '',
     message: '',
     reply_to: '',
-        })
+  });
+        setStatus("SUCCESS");  
         console.log('SUCCESS!', response.status, response.text);
         alert("Thank you for contacting me. I will respond to your message as soon as I can.");
       })
       .catch((err) => {
+        setStatus("ERROR");
         console.log('FAILED...', err);
       });
   };
@@ -42,10 +45,18 @@ const onSubmit = (e) => {
         <p className="text-[23px] lg:text-[28px] text-light-black font-[400] text-center mt-[30px] mb-[20px]">I'm always interested in hearing about new projects and opportunities.
 
 </p>
-<div className="">
-  <form className="flex flex-col items-center p-[20px]" onSubmit={onSubmit}>
-   
-<div className="flex flex-row ">
+{status === "SUCCESS" && (
+          <p className='text-[20px] leading-[30px]  md:text-[24px] font-[600] tracking-[0.0015em] md:leading-[36px] text-cognac text-center m-3'>Thank you for contacting me!</p>
+      )}
+       {status === "ERROR" && (
+        <div className="flex flex-col items-center m-3"> <p className='text-[20px] leading-[30px]  md:text-[24px] font-[500] tracking-[0.0015em] md:leading-[36px] text-red text-center'>Oops, something went wrong...</p>
+          <p className='text-[20px] leading-[30px]  md:text-[24px] font-[500] tracking-[0.0015em] md:leading-[36px] text-red text-center'>
+            Please, <button className='text-underline' onClick={() => setStatus(null)}>click here</button> to try again.
+          </p></div>
+      )}
+<div>
+  {status === null && (<form className="flex flex-col items-center p-[20px]" onSubmit={onSubmit}>
+   <div className="flex flex-row ">
     <div className="mx-[5px]">
       <input type="text" name="from_name" className="outline-cognac px-[10px] md:px-[20px] py-[10px] rounded-[10px] bg-nude text-black text-[17px] w-[140px] md:w-[300px] lg:w-[400px]" value={toSend.from_name}
     onChange={handleChange} placeHolder="Your Name" autoComplete="off" required/>
@@ -68,7 +79,8 @@ const onSubmit = (e) => {
       <button type="submit" className="px-[20px] py-[10px] text-[16px] rounded-[5px] bg-black text-white outline-none">Send Message</button>
     </div>
    
-  </form>
+  </form>)}
+  
 </div>
         </div>
   )
