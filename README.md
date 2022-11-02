@@ -1,4 +1,6 @@
-# Getting Started with Create React App
+# My Personal website
+
+#Live link: https://firdawslamidi.netlify.app/
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
