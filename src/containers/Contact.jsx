@@ -8,19 +8,22 @@ const Contact = () => {
     message: '',
     reply_to: '',
   });
-const serviceid =  process.env.REACT_APP_EMAILJS_SERVICE_ID;
-const templateid = process.env.REACT_APP_EMAILJS_TEMPLATE_ID;
-const userid = process.env.REACT_APP_EMAILJS_USER_ID;
 
-   const onSubmit = (e) => {
+const onSubmit = (e) => {
     e.preventDefault();
     send(
-      serviceid,
-      templateid,
+       process.env.REACT_APP_EMAILJS_SERVICE_ID,
+      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
       toSend,
-      userid
+      process.env.REACT_APP_EMAILJS_USER_ID
     )
       .then((response) => {
+        setToSend({
+           from_name: '',
+    subject: '',
+    message: '',
+    reply_to: '',
+        })
         console.log('SUCCESS!', response.status, response.text);
         alert("Thank you for contacting me. I will respond to your message as soon as I can.");
       })
@@ -45,20 +48,20 @@ const userid = process.env.REACT_APP_EMAILJS_USER_ID;
 <div className="flex flex-row ">
     <div className="mx-[5px]">
       <input type="text" name="Name" className="outline-cognac px-[10px] md:px-[20px] py-[10px] rounded-[10px] bg-nude text-black text-[17px] w-[140px] md:w-[300px] lg:w-[400px]" value={toSend.from_name}
-    onChange={handleChange} placeHolder="Your Name" />
+    onChange={handleChange} placeHolder="Your Name" autoComplete="off"/>
     </div>
     <div className="mx-[5px]">
       <input type="email" name="Email" className="outline-cognac px-[10px] md:px-[20px] py-[10px] rounded-[10px] bg-nude text-black text-[17px] w-[140px] md:w-[300px] lg:w-[400px]" placeHolder="Email address" value={toSend.reply_to}
-    onChange={handleChange}/>
+    onChange={handleChange} autoComplete="off"/>
     </div>
 </div>
     <div className="my-[10px]">
       <input type="text" name="Subject" className="outline-cognac px-[10px] md:px-[20px] py-[10px] rounded-[10px] bg-nude text-black text-[17px] w-[290px] md:w-[610px] lg:w-[810px]" placeHolder="Subject" value={toSend.subject}
-    onChange={handleChange}/>
+    onChange={handleChange} autoComplete="off"/>
     </div>
     <div className="my-[10px] flex justify-center">
       <textarea name="Message"  cols="30" rows="10"  className="md:px-[20px] px-[10px] py-[10px] outline-cognac rounded-[10px]  bg-nude text-darkgray text-[17px] w-[290px] md:w-[610px] lg:w-[810px]" value={toSend.message}
-    onChange={handleChange}>Message</textarea>
+    onChange={handleChange} placeHolder="Message" autoComplete="off"></textarea>
      
     </div>
     <div className="my-[10px]">
