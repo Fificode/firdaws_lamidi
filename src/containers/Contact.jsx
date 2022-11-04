@@ -1,4 +1,4 @@
-import React, { useState} from 'react'
+import React, { useState, useRef} from 'react'
 import { send } from 'emailjs-com';
 
 const Contact = () => {
@@ -9,13 +9,14 @@ const Contact = () => {
     reply_to: '',
   });
   const [status, setStatus] = useState(null);
+ const form = useRef();
 
 const onSubmit = (e) => {
     e.preventDefault();
     send(
        process.env.REACT_APP_EMAILJS_SERVICE_ID,
       process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-      toSend,process.env.REACT_APP_EMAILJS_USER_ID
+      form.current,process.env.REACT_APP_EMAILJS_USER_ID
     )
       .then((response) => {
         setToSend({
@@ -32,7 +33,8 @@ const onSubmit = (e) => {
       .catch((err) => {
         setStatus("ERROR");
         console.log('FAILED...', err);
-      });
+      }); 
+      form.current.reset();
   };
 
   const handleChange = (e) => {
@@ -55,7 +57,7 @@ const onSubmit = (e) => {
           </p></div>
       )}
 <div>
-  {status === null && (<form className="flex flex-col items-center p-[20px]" onSubmit={onSubmit}>
+  {status === null && (<form className="flex flex-col items-center p-[20px]" ref={form} onSubmit={onSubmit}>
    <div className="flex flex-row ">
     <div className="mx-[5px]">
       <input type="text" name="from_name" className="outline-cognac px-[10px] md:px-[20px] py-[10px] rounded-[10px] bg-nude text-black text-[17px] w-[140px] md:w-[300px] lg:w-[400px]" value={toSend.from_name}
