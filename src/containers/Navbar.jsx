@@ -33,9 +33,13 @@ const handleClick = () => setNav(!nav);
 
 <ul className={!nav ? 'hidden' : 'absolute w-full h-[auto] px-[5px] bg-almond animate-scale_up_tr md:h-[auto]'}>
   {navLinks.map((val) => 
-          <li key={val.id} onClick={() => setActiveNav(val.id)}  className={`w-full px-5 py-5 text-[18px] font-[500] hover:text-cognac text-light-black 
+          <li key={val.id} onClick={()=> { 
+            setActiveNav(val.id); 
+             setNav(false)}}  className={`w-full px-5 py-5 text-[18px] font-[500] hover:text-cognac text-light-black 
        ${
-        activeNav === val.id &&  "active"
+        
+        activeNav === val.id &&  "active" 
+         
        }
   `}><a href={val.path}>
             {val.title}

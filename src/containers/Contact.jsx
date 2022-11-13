@@ -12,13 +12,19 @@ const Contact = () => {
  const form = useRef();
 
 const onSubmit = (e) => {
+   
     e.preventDefault();
+    // console.log(process.env.REACT_APP_EMAILJS_SERVICE_ID);
+    // console.log(process.env.REACT_APP_EMAILJS_TEMPLATE_ID);
+    // console.log(process.env.REACT_APP_EMAILJS_USER_ID);
     send(
        process.env.REACT_APP_EMAILJS_SERVICE_ID,
-      process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
-      form.current,process.env.REACT_APP_EMAILJS_USER_ID
+       process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+      toSend,
+      process.env.REACT_APP_EMAILJS_USER_ID
     )
       .then((response) => {
+       
         setToSend({
     from_name: '',
     subject: '',
@@ -44,7 +50,7 @@ const onSubmit = (e) => {
   return (
     <div id="contact"><h2 className="lg:text-[40px] md:text-[30px] text-[27px] text-light-black text-center mt-[80px] mb-[5px] font-[700]">LET'S GET IN TOUCH</h2>
         <div className="flex justify-center"> <p className="border-b-cognac border-solid border-b-[3px] w-[300px] md:w-[350px] lg:w-[500px] text-center rounded-[2px]"></p></div>
-        <p className="text-[23px] lg:text-[28px] text-light-black font-[400] text-center mt-[30px] mb-[20px]">I'm always interested in hearing about new projects and opportunities.
+        <p className="text-[23px] lg:text-[28px] text-light-black font-[400] text-center mt-[30px] mx-[10px] mb-[20px]">I'm always interested in hearing about new projects and opportunities.
 
 </p>
 {status === "SUCCESS" && (
