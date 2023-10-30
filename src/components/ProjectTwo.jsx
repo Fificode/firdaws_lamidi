@@ -32,7 +32,7 @@ const ProjectTwo = ({header, stackone, stackthree, stackfour, stackfive, explana
 </div>
 <div className="mx-[10px]">
   <div className="border-[1px] px-[20px] py-[5px] md:py-[10px] rounded-[5px] border-light-black flex justify-between items-center">
-  <a href="https://github.com/Fificode/react-tailwind-teta-app" className="text-center text-[14px] md:text-[17px]">View code</a>
+  <a href="https://github.com/Fificode/react-tailwind-teta-app" target='_blank' rel="noreferrer" className="text-center text-[14px] md:text-[17px]">View code</a>
   <img src={github} alt="Github icon" className="fill-black mx-[3px] w-[20px] h-[20px] md:w-[25px] md:h-[25px]" />
   </div>
 </div>
