@@ -1,10 +1,10 @@
 import React from 'react'
 
 
-const Article = ({header, articleimage, explanation, stackone}) => {
+const ArticleTwo = ({header, articleimage, explanation, stackone}) => {
   return (
     <div>
-         <div className="flex flex-col-reverse xl:flex-row-reverse items-center justify-center">
+         <div className="flex flex-col-reverse xl:flex-row-reverse items-center justify-center my-[40px]">
       <div className="flex flex-col items-center m-[10px] flex-[100%] max-w-full" >
         <h1 className="mt-[20px] md:text-[30px] text-[25px] text-light-black text-center font-[500]">{header}</h1>
        <div className="flex my-[5px]">
@@ -38,4 +38,4 @@ const Article = ({header, articleimage, explanation, stackone}) => {
   )
 }
 
-export default Article
+export default ArticleTwo
