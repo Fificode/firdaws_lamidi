@@ -33,7 +33,7 @@ const Works = () => {
 <div className="mt-[30px]">
 <div className='px-[10px]'>
   <ProjectOne projectimage={sandwichapp} header="Sandwich Club App" stackone={html} stackthree={js} stackfour={tailwind} stackfive={react} explanation="A Sandwich app used for ordering sandwiches. It was built with HTML, Javascript, React js and Tailwind CSS" />
-  <ProjectSix projectimage={wtapp} header="Weight Tracker App" stackone={html} stacktwo={css}  stackthree={js}  stacksix={vue} explanation="A Weight Tracker app. It was built with HTML, Javascript, Vue js and CSS" />
+  <ProjectSix projectimage={wtapp} header="Weight Tracker App" stackone={html} stacktwo={css}  stackthree={js}  stacksix={vue} explanation="A Weight Tracker app. It was built with HTML, CSS, Javascript and Vue js" />
   {/* <ProjectTwo  projectimage={vetaapp} header="Veta App" stackone={html} stackthree={js} stackfour={react} stackfive={tailwind} explanation="A Landing page built with HTML, Tailwind CSS, Javascript and React js" /> */}
   <ProjectThree projectimage={weatherapp} header="Weather Forecast App" stackone={html} stacktwo={css} stackthree={js} stackfour={react} explanation="A weather application for getting current weather conditions, hourly and also daily. It was built with HTML, Javascript, React js and Tailwind CSS" />
   <ProjectFour projectimage={tannersapp} header="Tanner's Inn App" stackone={html} stacktwo={css} stackthree={js} stackfour={react} explanation="An Inn Application for booking a room. It was built with HTML, CSS, Javascript and React js" />
