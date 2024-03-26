@@ -23,7 +23,7 @@ const Header = () => {
   <li className="px-[5px]"><a href="mailto:lamidifirdaws@gmail.com" target='_blank' rel="noreferrer">  <img src={gmail} alt="Gmail icon" className="fill-black w-[20px] h-[20px] md:w-[30px] md:h-[30px]" /></a></li>
   <li className="px-[5px]"><a href="https://medium.com/@lamidifirdaws" target='_blank' rel="noreferrer">  <img src={medium} alt="Medium icon" className="fill-black w-[20px] h-[20px] md:w-[30px] md:h-[30px]" /></a></li>
   <li className="px-[5px]"><a href="https://twitter.com/_firdawsss" target='_blank' rel="noreferrer"> <img src={twitter} alt="Twitter icon" className="fill-black w-[20px] h-[20px] md:w-[30px] md:h-[30px]" /></a></li>
-  <li className="px-[5px]"><a href="https://www.instagram.com/nanashee__/" target='_blank' rel="noreferrer">  <img src={instagram} alt="Instagram icon" className="fill-black w-[20px] h-[20px] md:w-[30px] md:h-[30px]" /></a></li>
+  <li className="px-[5px]"><a href="https://www.instagram.com/_nanashee/" target='_blank' rel="noreferrer">  <img src={instagram} alt="Instagram icon" className="fill-black w-[20px] h-[20px] md:w-[30px] md:h-[30px]" /></a></li>
  </ul>
  <div className="mt-[60px] animate-bounce"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor" className="w-10 h-10">
   <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 5.25l-7.5 7.5-7.5-7.5m15 6l-7.5 7.5-7.5-7.5" />
