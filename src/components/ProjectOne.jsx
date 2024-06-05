@@ -2,16 +2,16 @@ import React from 'react'
 // import github from '../assets/github.svg'
 
 
-const ProjectOne = ({header, stackone, stackthree, stackfour, stackfive, explanation, projectimage}) => {
+const ProjectOne = ({header, stackthree, stackfour, stackfive, explanation, projectimage}) => {
   return (
-    <div className="flex flex-col-reverse xl:flex-row justify-center items-center my-[40px]">
+    <div className="flex flex-col xl:flex-row justify-center items-center my-[40px]">
       <div className="flex flex-col items-center mx-[10px] my-[5px] flex-[100%] max-w-full" >
         <h1 className="mt-[20px] md:text-[30px] text-[25px] text-light-black text-center  font-[500]">{header}</h1>
         <div className="flex my-[10px]">
-          <img src={stackone} alt="HTML logo" className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] mx-1" />
+        <img src={stackfive} alt="Vue logo" className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] mx-1" />
           <img src={stackthree} alt="Javascript logo" className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] mx-1" />
           <img src={stackfour} alt="Tailwind CSS logo" className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] mx-1" />
-          <img src={stackfive} alt="Vue logo" className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] mx-1" />
+          
         </div>
         <div className="my-[5px]">
           <p className="text-[20px] text-light-black font-[400] text-center">
