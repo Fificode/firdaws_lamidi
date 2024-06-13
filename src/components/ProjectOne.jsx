@@ -1,10 +1,9 @@
 import React from 'react'
-// import github from '../assets/github.svg'
 
 
 const ProjectOne = ({header, stackthree, stackfour, stackfive, explanation, projectimage}) => {
   return (
-    <div className="flex flex-col xl:flex-row justify-center items-center my-[40px]">
+    <div className="flex flex-col-reverse xl:flex-row justify-center items-center my-[40px]">
       <div className="flex flex-col items-center mx-[10px] my-[5px] flex-[100%] max-w-full" >
         <h1 className="mt-[20px] md:text-[30px] text-[25px] text-light-black text-center  font-[500]">{header}</h1>
         <div className="flex my-[10px]">
@@ -31,12 +30,7 @@ const ProjectOne = ({header, stackthree, stackfour, stackfive, explanation, proj
   </div>
  
 </div>
-{/* <div className="mx-[10px]">
-  <div className="border-[1px] px-[20px] py-[5px] md:py-[10px] rounded-[5px] border-light-black flex justify-between items-center">
-  <a href="https://github.com/Fificode/react-sandwichclub" target='_blank' rel="noreferrer" className="text-center text-[14px] md:text-[17px]">View code</a>
-  <img src={github} alt="Github icon" className="fill-black mx-[3px] w-[20px] h-[20px] md:w-[25px] md:h-[25px]" />
-  </div>
-</div> */}
+
         </div>
       </div>
       <div className="mx-[10px] my-[8px] md:m-[10px] flex justify-center flex-[100%] max-w-full" >
