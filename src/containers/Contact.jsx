@@ -1,5 +1,7 @@
 import React, { useState, useRef} from 'react'
 import { send } from 'emailjs-com';
+import { FaSpinner } from "react-icons/fa";
+import { toast } from 'sonner';
 
 const Contact = () => {
   const [toSend, setToSend] = useState({
@@ -9,10 +11,11 @@ const Contact = () => {
     reply_to: '',
   });
   const [status, setStatus] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
  const form = useRef();
 
 const onSubmit = (e) => {
-   
+   setIsLoading(true);
     e.preventDefault();
     // console.log(process.env.REACT_APP_EMAILJS_SERVICE_ID);
     // console.log(process.env.REACT_APP_EMAILJS_TEMPLATE_ID);
@@ -32,13 +35,16 @@ const onSubmit = (e) => {
     reply_to: '',
   });
   console.log(response);
+  setIsLoading(false);
         setStatus("SUCCESS");  
         console.log('SUCCESS!', response.status, response.text);
-        alert("Thank you for contacting me. I will respond to your message as soon as I can.");
+        toast.success("Thank you for contacting me. I will respond to your message as soon as I can.");
+        
       })
       .catch((err) => {
         setStatus("ERROR");
         console.log('FAILED...', err);
+        toast.error("Error sending message")
       }); 
       form.current.reset();
   };
@@ -84,7 +90,7 @@ const onSubmit = (e) => {
      
     </div>
     <div className="my-[10px]">
-      <button type="submit" className="px-[20px] py-[10px] text-[16px] rounded-[5px] bg-black text-white outline-none">Send Message</button>
+      <button type="submit" className="px-[20px] w-[200px] h-[56px] py-[10px] text-[16px] rounded-[5px] bg-black text-white outline-none">{isLoading ? (<FaSpinner className="animate-spin mx-auto text-xl text-white " />) : ('Send Message')}</button>
     </div>
    
   </form>)}
