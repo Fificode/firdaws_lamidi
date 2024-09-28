@@ -37,7 +37,7 @@ const ProjectSeven = ({
           </p>
         </div>
         <div className="flex flex-row justify-center my-[15px] ">
-          <div className="mx-[10px] flex gap-2">
+          <div className="mx-[10px] flex flex-col md:flex-row gap-4 md:gap-2">
             <div className="border-[1px] px-[20px] py-[5px] md:py-[10px] w-auto rounded-[5px] border-light-black flex justify-between items-center">
               <a
                 href="https://www.ridefraser.com/"
