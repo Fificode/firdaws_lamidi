@@ -7,9 +7,9 @@ const Navbar = () => {
     const [nav, setNav] = useState(false);
 const handleClick = () => setNav(!nav);
   return (
-    <div className='w-screen h-[60px] z-10 fixed top-0 bg-almond'>
+    <div className='w-screen h-[60px] z-10 fixed top-0 bg-almond px-4'>
         <div className="w-full h-full flex justify-between items-center">
-<div className='mx-2 my-[28px] p-[5px] '>
+<div className='mx-2 my-[28px] py-[5px] '>
   <a href="#home">
 <img src={logo} alt="Logo" className='w-[50px] h-[30px] lg:w-[100px] lg:h-[50px]'/>
 </a>
