@@ -12,7 +12,7 @@ const About = () => {
         data-aos-duration="2000">
       <div className="flex justify-center">
         <main className="text-center tracking-[0.0015em] leading-[29px] text-[18px] md:text-[22px] font-[400] text-light-black p-[5px] md:p-[30px]">
-          <p className="py-[15px] md:py-[10px]">Hello 👋, my name is Firdaws Lamidi. I am a Front end Developer, a Mobile app Developer and a Technical Writer.</p><p className="py-[10px]"> I have three years of experience in Front end development. I am a problem solver, I love to code and simplify technical concepts that some people find difficult to understand.</p><p className="py-[10px]"> I specialize in building amazing user interfaces. My works are exceptional and proffers seamless experience for users both on mobile and web platforms.</p>
+          <p className="py-[15px] md:py-[10px]">Hello 👋, my name is Firdaws Lamidi. I am a Front end Developer, a Mobile app Developer and a Technical Writer.</p><p className="py-[10px]"> I have five years of experience in Front end development. I am a problem solver, I love to code and simplify technical concepts that some people find difficult to understand.</p><p className="py-[10px]"> I specialize in building amazing user interfaces. My works are exceptional and proffers seamless experience for users both on mobile and web platforms.</p>
           <p className="py-[10px]">I'm super excited you're here. Feel free to <a href="https://wa.me/2349022629258" target='_blank' rel="noreferrer" className="text-cognac"> reach out to me </a>with any project ideas you have or to just say hello!</p>
         </main>
       </div>
