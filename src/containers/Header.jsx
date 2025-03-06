@@ -14,7 +14,7 @@ const Header = () => {
       <div className="flex flex-col items-center">
         <img src={bitmoji} alt="Firdaws Lamidi's Bitmoji" className="md:w-[150px] w-[100px] h-[100%] rounded-[50%]" />
         <h1 className="md:text-[50px] text-[35px] text-light-black text-center my-1 font-[600]">Hi, I'm Firdaws Lamidi</h1>
-       <div className="flex justify-center my-1"> <Typed className="text-cognac text-[30px] md:text-[40px] text-center" strings={["Front end Developer.", "Technical Writer.", "Mobile App Developer."]}
+       <div className="flex justify-center my-1"> <Typed className="text-cognac text-[30px] md:text-[40px] text-center" strings={["Front end Developer", "Technical Writer", "Mobile App Developer"]}
         typeSpeed={100} backSpeed={50} loop/></div>
       
 <ul className="flex justify-between mt-[20px] list-none">
