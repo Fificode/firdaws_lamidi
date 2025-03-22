@@ -1,5 +1,5 @@
 import React from "react";
-import github from "../assets/github.svg"
+import { FaGithub } from "react-icons/fa";
 
 const Project = ({
   header,
@@ -44,12 +44,8 @@ websiteLink,
                   className="text-center text-[14px] md:text-[17px] flex justify-center items-center gap-2"
                 >
                   View code
-               
-                <img
-                  src={github}
-                  alt="Github icon"
-                  className="fill-black mx-[3px] w-[20px] h-[20px] md:w-[25px] md:h-[25px]"
-                /> </a>
+               <FaGithub   className="text-black mx-[3px] w-[20px] h-[20px] md:w-[25px] md:h-[25px]"/>
+               </a>
               </div>
             </div>
           )}

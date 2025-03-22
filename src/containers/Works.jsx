@@ -3,7 +3,7 @@ import Project from "../components/Project";
 import wtapp from "../assets/wtapp.png";
 import cmjs from "../assets/cmjs.webp";
 import weatherarticle from "../assets/weatherarticle.jpg";
-import medium from "../assets/medium.svg";
+import { BsMedium } from "react-icons/bs";
 import ArticleOne from "../components/ArticleOne";
 import ArticleTwo from "../components/ArticleTwo";
 import ArticleThree from "../components/ArticleThree";
@@ -48,19 +48,19 @@ const Works = () => {
               header="Most common methods of sending and receiving data in Javscript"
               explanation=" An article explaining the most common methods of sending and receiving data in Javscript published on Medium"
               articleimage={cmjs}
-              stackone={medium}
+              stackone={BsMedium}
             />
             <ArticleTwo
               header="How to build a Weight Tracker app with Vue js and Chart.js"
               explanation=" An article explaining how to build a weight tracker app with Vue js and Chart.js published on Medium"
               articleimage={wtapp}
-              stackone={medium}
+              stackone={BsMedium}
             />
             <ArticleThree
               header="How to Build a Weather App using React js"
               explanation=" An article explaining how to build a weather app using React js published on Medium"
               articleimage={weatherarticle}
-              stackone={medium}
+              stackone={BsMedium}
             />
           </div>
         </div>

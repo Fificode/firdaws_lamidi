@@ -1,18 +1,18 @@
 import React, { Suspense } from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import "./index.css";
 // import App from "./App";
 // import reportWebVitals from "./reportWebVitals";
 import { FaSpinner } from "react-icons/fa";
 
 const LazyApp = React.lazy(() => import("./App"));
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(
   <React.StrictMode>
-    <Suspense fallback={<FaSpinner className="animate-spin mx-auto text-2xl text-black " />}>
+    <Suspense fallback={<FaSpinner className="animate-spin mx-auto text-2xl text-black my-3" />}>
       <LazyApp />
     </Suspense>
-  </React.StrictMode>,
-  document.getElementById("root")
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function

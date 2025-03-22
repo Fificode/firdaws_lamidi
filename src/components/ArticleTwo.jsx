@@ -8,7 +8,7 @@ const ArticleTwo = ({header, articleimage, explanation, stackone}) => {
       <div className="flex flex-col items-center m-[10px] flex-[100%] max-w-full" >
         <h1 className="mt-[20px] md:text-[30px] text-[25px] text-light-black text-center font-[500]">{header}</h1>
        <div className="flex my-[5px]">
-          <img src={stackone} alt="HTML logo" className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] mx-1" />
+       <div className="w-[30px] h-[30px] md:w-[40px] md:h-[40px] mx-1">{stackone}</div> 
          </div>
         <div className="">
           <p className="text-[20px] text-light-black font-[400] text-center">
