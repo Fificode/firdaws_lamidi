@@ -1,13 +1,9 @@
 import React from "react";
 import Project from "../components/Project";
-import wtapp from "../assets/wtapp.png";
-import cmjs from "../assets/cmjs.webp";
-import weatherarticle from "../assets/weatherarticle.jpg";
-import { BsMedium } from "react-icons/bs";
-import ArticleOne from "../components/ArticleOne";
-import ArticleTwo from "../components/ArticleTwo";
-import ArticleThree from "../components/ArticleThree";
+import Article from "../components/Article";
 import { projects } from "../utilities/projects";
+import { articles } from "../utilities/articles";
+
 
 const Works = () => {
   return (
@@ -44,24 +40,17 @@ const Works = () => {
             <p className="border-b-cognac border-solid border-b-[3px] w-[150px] md:w-[300px] text-center rounded-[2px]"></p>
           </div>
           <div className="px-[50px]">
-            <ArticleOne
-              header="Most common methods of sending and receiving data in Javscript"
-              explanation=" An article explaining the most common methods of sending and receiving data in Javscript published on Medium"
-              articleimage={cmjs}
-              stackone={BsMedium}
-            />
-            <ArticleTwo
-              header="How to build a Weight Tracker app with Vue js and Chart.js"
-              explanation=" An article explaining how to build a weight tracker app with Vue js and Chart.js published on Medium"
-              articleimage={wtapp}
-              stackone={BsMedium}
-            />
-            <ArticleThree
-              header="How to Build a Weather App using React js"
-              explanation=" An article explaining how to build a weather app using React js published on Medium"
-              articleimage={weatherarticle}
-              stackone={BsMedium}
-            />
+          {articles.map((article, index) =>
+            <Article
+              header={article.header}
+              explanation={article.explanation}
+              articleimage={article.articleImage}
+              stack={article.stack}
+              websiteLink={article.websiteLink}
+              className={index % 2 !== 0 ? "xl:flex-row-reverse" : "xl:flex-row"}
+            /> 
+          )}
+           
           </div>
         </div>
       </div>

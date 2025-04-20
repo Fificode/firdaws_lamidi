@@ -1,5 +1,6 @@
 import React from "react";
 import { FaGithub } from "react-icons/fa";
+import { Magnetic } from '../components/motion-primitives/magnetic';
 
 const Project = ({
   header,
@@ -36,6 +37,7 @@ websiteLink,
         <div className="flex flex-row justify-center my-[15px] ">
           {githubLink && (
             <div className="mx-[10px]">
+            <Magnetic>
               <div className="border-[1px] px-[20px] py-[5px] md:py-[10px] rounded-[5px] border-light-black ">
                 <a
                   href={githubLink}
@@ -47,23 +49,26 @@ websiteLink,
                <FaGithub   className="text-black mx-[3px] w-[20px] h-[20px] md:w-[25px] md:h-[25px]"/>
                </a>
               </div>
+</Magnetic>
             </div>
           )}
 {websiteLink && (
   <div className="mx-[10px]">
+  <Magnetic>
   <div className="border-[1px] px-[20px] py-[5px] md:py-[10px] rounded-[5px] border-light-black ">
     <a href={websiteLink} target='_blank' rel="noreferrer" className="text-center text-[14px] md:text-[17px] flex justify-center gap-2 items-center">Visit website
      <div className="mx-[3px]"> <svg className="w-[20px] h-[15px] md:w-[25px] md:h-[25px]" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" >
   <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 19.5l15-15m0 0H8.25m11.25 0v11.25" />
 </svg>
 </div>
-     </a>
+     </a>  
   </div>
- 
+  </Magnetic>
 </div>
 )}
           {videoLink && (
             <div className="mx-[10px]">
+            <Magnetic>
               <div className="border-[1px] px-[20px] py-[5px] md:py-[10px] rounded-[5px] border-light-black ">
                 <a
                   href={videoLink}
@@ -93,6 +98,7 @@ websiteLink,
                 </div>
 </a>
               </div>
+              </Magnetic>
             </div>
           )}
         </div>

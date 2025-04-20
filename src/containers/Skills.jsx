@@ -25,7 +25,7 @@ const Skills = () => {
       </div>
       <div className="mt-[30px] mb-[20px] px-[10px] flex flex-col items-center justify-center xl:flex-row flex-wrap">
       {data.map((item) => (
-        <div key={item.id} className="border-2 my-[20px] rounded-[5px] border-[#a49cac] w-auto px-[40px] py-[5px] mx-[10px] relative h-auto  overflow-hidden outline-none  ">
+        <div key={item.id} className="border-2 my-[20px] rounded-[3px] border-[#a49cac] w-auto px-[40px] py-[5px] mx-[10px] relative h-auto  overflow-hidden outline-none  ">
         <BorderTrail
        style={{
           boxShadow:

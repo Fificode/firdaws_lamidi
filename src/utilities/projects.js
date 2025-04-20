@@ -1,4 +1,4 @@
-import hamzaa from "../assets/hamzaa.png";
+import hamxaa from "../assets/hamxaa.png";
 import tailwind from "../assets/tailwind.svg";
 import react from "../assets/react.svg";
 import js from "../assets/js.svg";
@@ -16,12 +16,12 @@ import vue from "../assets/vue.png"
 export const projects = [
   {
     id: 1,
-    header: "Hamzaa",
-    projectImage: hamzaa ,
+    header: "Hamxaa",
+    projectImage: hamxaa ,
     stack: [tailwind, react, js],
     explanation:
-      "Hamzaa is an Auto Repair software designed to help automotive repair shops manage customer relationships, streamline operations, track service history, manage inventory, and improve customer retention through automation.",
-    websiteLink: "https://hamzaa.ca/",
+      "Hamxaa is an Auto Repair software designed to help automotive repair shops manage customer relationships, streamline operations, track service history, manage inventory, and improve customer retention through automation.",
+    websiteLink: "https://hamxaa.com/",
   },
   {
     id: 2,
