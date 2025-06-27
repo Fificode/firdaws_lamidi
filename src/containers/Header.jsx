@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import  { useState } from "react";
 import bitmoji from "../assets/bitmoji.jpg";
 import { TextLoop } from "../components/motion-primitives/text-loop";
 import { FaGithub } from "react-icons/fa";
@@ -7,7 +7,7 @@ import { MdMailOutline } from "react-icons/md";
 import { BsMedium } from "react-icons/bs";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
-import { Dock, DockIcon, DockItem, DockLabel } from "../components/motion-primitives/dock";
+
 
 
 const Header = () => {
@@ -113,7 +113,7 @@ const Header = () => {
          
         </div>
         <div className='md:mt-[20px] relative max-w-full'>
-      <Dock className='flex items-center'>
+      <div className='flex items-center gap-4'>
         {socialIcons.map((item) => (
           <a
             key={item.title}
@@ -122,15 +122,13 @@ const Header = () => {
               rel="noreferrer"
               className=""
             >
-          <DockItem
-            className=''
-          >
-            <DockLabel>{item.title}</DockLabel>
-            <DockIcon>{item.icon}</DockIcon>
-          </DockItem>
+        
+         
+            <div>{item.icon}</div>
+        
           </a>
         ))}
-      </Dock>
+      </div>
     </div>
         {/* <ul className="flex justify-between mt-[20px] list-none">
           <li className="px-[5px]">
