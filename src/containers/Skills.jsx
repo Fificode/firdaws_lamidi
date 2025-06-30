@@ -1,5 +1,4 @@
-import React from "react";
-import { BorderTrail } from "../components/motion-primitives/border-trail";
+
 
 const Skills = () => {
   const data = [
@@ -25,14 +24,9 @@ const Skills = () => {
       </div>
       <div className="mt-[30px] mb-[20px] px-[10px] flex flex-col items-center justify-center xl:flex-row flex-wrap">
       {data.map((item) => (
-        <div key={item.id} className="border-2 my-[20px] rounded-[3px] border-[#a49cac] w-auto px-[40px] py-[5px] mx-[10px] relative h-auto  overflow-hidden outline-none  ">
-        <BorderTrail
-       style={{
-          boxShadow:
-            '0px 0px 60px 30px #f00, 0 0 100px 60px #e3b, 0 0 140px 90px #500',
-        }}
-        
-      />
+        <div data-aos="flip-left"
+            data-aos-duration="2000" key={item.id} className="border-2 my-[20px] rounded-[3px] border-cognac w-auto px-[40px] py-[5px] mx-[10px] relative h-auto  overflow-hidden outline-none  ">
+       
           <p className="text-center text-[17px] font-[500] text-light-black uppercase">
            {item.skill}
           </p>

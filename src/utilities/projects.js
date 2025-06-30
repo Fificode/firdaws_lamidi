@@ -6,7 +6,7 @@ import ridefraser from "../assets/ridefraser.png";
 import typescript from "../assets/typescript.svg"
 import getbooks from "../assets/getbooks.png"
 import nextjs from "../assets/nextjs.svg"
-import accessorieshub from "../assets/accessories-hub.png"
+import ameerahlamidi from "../assets/ameerah-lamidi.png"
 import html from "../assets/html.svg"
 import sandwichapp from "../assets/sandwichapp.png"
 import quizapp from "../assets/nimelssaDashboard.png"
@@ -43,13 +43,13 @@ export const projects = [
   },
   {
     id: 4,
-    header: "Accessories Hub Web App",
-    projectImage: accessorieshub ,
+    header: "Client's Portfolio",
+    projectImage: ameerahlamidi ,
     stack: [tailwind, nextjs, typescript,],
     explanation:
-      "An ecommerce web application built for selling jewelries. It was built with Next Js, Tailwind CSS and Typescript",
-      githubLink: "https://github.com/Fificode/accessories-hub",
-      websiteLink: "https://accessories-hub.netlify.app/"
+      "A responsive portfolio website built for a client to showcase their work and professional skills. Developed using Next.js, Tailwind CSS, and TypeScript for optimal performance, scalability, and clean design",
+      // githubLink: "https://github.com/Fificode/accessories-hub",
+      websiteLink: "https://ameerah-lamidi.vercel.app/"
     
   },
   {
