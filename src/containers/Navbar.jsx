@@ -7,7 +7,7 @@ const Navbar = () => {
     const [nav, setNav] = useState(false);
 const handleClick = () => setNav(!nav);
   return (
-    <div className='w-screen h-[60px] z-10 fixed top-0 bg-almond px-4'>
+    <div className='w-screen h-[60px] z-10 fixed top-0 bg-almond'>
         <div className="w-full h-full flex justify-between items-center">
 <div className='mx-2 my-[28px] py-[5px] '>
   <a href="#home">
@@ -26,12 +26,12 @@ const handleClick = () => setNav(!nav);
         )}
        <a href="https://docs.google.com/document/d/17VWFF5m_cvHnbpJJvJ1w3E_8J6MwqpypmGRMGRuzScE/edit?usp=sharing" target='_blank' rel="noreferrer" className='rounded-[10px] px-[20px] py-[5px] text-center border-[2px] border-cognac border-solid mx-[7px] my-[13px] text-[18px] mr-[30px] font-[500] text-light-black hover:text-cognac hover:border-black'>Resume</a>
         </ul>
-<div className="md:hidden" onClick={handleClick}>
-    {!nav ? <MenuIcon className='w-10 text-cognac m-2' /> : <XIcon className='w-10 text-cognac m-2'/>}
+<div className="md:hidden pr-4" onClick={handleClick}>
+    {!nav ? <MenuIcon className='w-10 text-cognac my-2' /> : <XIcon className='w-10 text-cognac my-2'/>}
 </div>
 </div>
 
-<ul className={!nav ? 'hidden' : 'absolute w-full h-[auto] px-[5px] bg-almond animate-scale_up_tr md:h-[auto]'}>
+<ul className={!nav ? 'hidden' : ' w-full h-auto px-[5px] pb-6 bg-almond animate-scale_up_tr md:h-auto md:hidden'}>
   {navLinks.map((val) => 
           <li key={val.id} onClick={()=> { 
             setActiveNav(val.id); 

@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState, useEffect } from "react";
 import bitmoji from "../assets/bitmoji.jpg";
 import { TextLoop } from "../components/motion-primitives/text-loop";
 import { FaGithub } from "react-icons/fa";
@@ -8,54 +8,58 @@ import { BsMedium } from "react-icons/bs";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa";
 
-
-
 const Header = () => {
   const [direction, setDirection] = useState(-1);
+  const [localIndex, setLocalIndex] = useState(0);
+
+  useEffect(() => {
+    setDirection(localIndex === 0 ? -1 : 1);
+  }, [localIndex]);
+
   const socialIcons = [
     {
-      title: 'Github',
+      title: "Github",
       icon: (
         <FaGithub className="text-black w-[20px] h-[20px] md:w-[30px] md:h-[30px]" />
       ),
-      href: 'https://github.com/Fificode',
+      href: "https://github.com/Fificode",
     },
     {
-      title: 'LinkedIn',
+      title: "LinkedIn",
       icon: (
         <FaLinkedin className="text-black w-[20px] h-[20px] md:w-[30px] md:h-[30px]" />
       ),
-      href: 'https://www.linkedin.com/in/firdaws-lamidi-840b57200/',
+      href: "https://www.linkedin.com/in/firdaws-lamidi-840b57200/",
     },
     {
-      title: 'Gmail',
+      title: "Gmail",
       icon: (
         <MdMailOutline className="text-black w-[20px] h-[20px] md:w-[30px] md:h-[30px]" />
       ),
-      href: 'mailto:lamidifirdaws@gmail.com',
+      href: "mailto:lamidifirdaws@gmail.com",
     },
     {
-      title: 'Medium',
+      title: "Medium",
       icon: (
-        <BsMedium className="text-black w-[20px] h-[20px] md:w-[30px] md:h-[30px]"/>
+        <BsMedium className="text-black w-[20px] h-[20px] md:w-[30px] md:h-[30px]" />
       ),
-      href: 'https://medium.com/@lamidifirdaws',
+      href: "https://medium.com/@lamidifirdaws",
     },
     {
-      title: 'X (formerly known as Twitter)',
+      title: "X (formerly known as Twitter)",
       icon: (
-        <FaXTwitter className="text-black w-[20px] h-[20px] md:w-[30px] md:h-[30px]"/>
+        <FaXTwitter className="text-black w-[20px] h-[20px] md:w-[30px] md:h-[30px]" />
       ),
-      href: 'https://twitter.com/_firdawsss',
+      href: "https://twitter.com/_firdawsss",
     },
     {
-      title: 'Instagram',
+      title: "Instagram",
       icon: (
         <FaInstagram className="text-black w-[20px] h-[20px] md:w-[30px] md:h-[30px]" />
       ),
-      href: 'https://www.instagram.com/_nanashee/',
+      href: "https://www.instagram.com/_nanashee/",
     },
-  ]
+  ];
 
   return (
     <div
@@ -68,13 +72,12 @@ const Header = () => {
           alt="Firdaws Lamidi's Bitmoji"
           className="md:w-[150px] w-[100px] h-[100%] rounded-[50%]"
         />
-       
+
         <h1 className="md:text-[50px] text-[35px] text-light-black text-center my-1 font-[600]">
           Hi, I'm Firdaws Lamidi
         </h1>
         <div className="flex justify-center my-1">
-     
-     <TextLoop
+          <TextLoop
             className="text-cognac text-[30px] md:text-[40px] text-center"
             transition={{
               type: "spring",
@@ -84,7 +87,7 @@ const Header = () => {
             }}
             interval={2.5}
             onIndexChange={(index) => {
-              setDirection(index === 0 ? -1 : 1);
+              setLocalIndex(index);
             }}
             variants={{
               initial: {
@@ -110,38 +113,22 @@ const Header = () => {
             <span>Front end Developer</span>
             <span>Technical Writer</span>
           </TextLoop>
-         
         </div>
-        <div className='md:mt-[20px] relative max-w-full'>
-      <div className='flex items-center gap-4'>
-        {socialIcons.map((item) => (
-          <a
-            key={item.title}
-              href={item.href}
-              target="_blank"
-              rel="noreferrer"
-              className=""
-            >
-        
-         
-            <div>{item.icon}</div>
-        
-          </a>
-        ))}
-      </div>
-    </div>
-        {/* <ul className="flex justify-between mt-[20px] list-none">
-          <li className="px-[5px]">
-            <a
-              href="https://github.com/Fificode"
-              target="_blank"
-              rel="noreferrer"
-            >
-              {" "}
-              <FaGithub className="text-black w-[20px] h-[20px] md:w-[30px] md:h-[30px]" />
-            </a>
-          </li>
-        </ul> */}
+        <div className="md:mt-[20px] relative max-w-full">
+          <div className="flex items-center gap-4">
+            {socialIcons.map((item) => (
+              <a
+                key={item.title}
+                href={item.href}
+                target="_blank"
+                rel="noreferrer"
+                className=""
+              >
+                <div>{item.icon}</div>
+              </a>
+            ))}
+          </div>
+        </div>
         <div className="mt-[60px] animate-bounce">
           <svg
             xmlns="http://www.w3.org/2000/svg"
