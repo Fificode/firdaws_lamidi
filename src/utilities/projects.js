@@ -39,7 +39,7 @@ export const projects = [
     stack: [tailwind, react, typescript],
     explanation:
       "An e-commerce store for buying and selling books based on user’s location",
-      websiteLink: "https://dev.getbooks.ng/",
+      websiteLink: "https://beta.getbooks.ng/",
   },
   {
     id: 4,
