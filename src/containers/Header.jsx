@@ -5,8 +5,8 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { MdMailOutline } from "react-icons/md";
 import { BsMedium } from "react-icons/bs";
-import { FaXTwitter } from "react-icons/fa6";
-import { FaInstagram } from "react-icons/fa";
+// import { FaXTwitter } from "react-icons/fa6";
+// import { FaInstagram } from "react-icons/fa";
 
 const Header = () => {
   const [direction, setDirection] = useState(-1);
@@ -45,20 +45,20 @@ const Header = () => {
       ),
       href: "https://medium.com/@lamidifirdaws",
     },
-    {
-      title: "X (formerly known as Twitter)",
-      icon: (
-        <FaXTwitter className="text-black w-[20px] h-[20px] md:w-[30px] md:h-[30px]" />
-      ),
-      href: "https://twitter.com/_firdawsss",
-    },
-    {
-      title: "Instagram",
-      icon: (
-        <FaInstagram className="text-black w-[20px] h-[20px] md:w-[30px] md:h-[30px]" />
-      ),
-      href: "https://www.instagram.com/_nanashee/",
-    },
+    // {
+    //   title: "X (formerly known as Twitter)",
+    //   icon: (
+    //     <FaXTwitter className="text-black w-[20px] h-[20px] md:w-[30px] md:h-[30px]" />
+    //   ),
+    //   href: "https://twitter.com/_firdawsss",
+    // },
+    // {
+    //   title: "Instagram",
+    //   icon: (
+    //     <FaInstagram className="text-black w-[20px] h-[20px] md:w-[30px] md:h-[30px]" />
+    //   ),
+    //   href: "https://www.instagram.com/_nanashee/",
+    // },
   ];
 
   return (
