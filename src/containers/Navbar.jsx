@@ -46,7 +46,7 @@ const handleClick = () => setNav(!nav);
             </a>
           </li>
         )}
-       <a href="https://docs.google.com/document/d/1LfuMni1rla4g2CjB17FbPl81H3LUqVzAYXK7gBT6nCg/edit?usp=sharing" target='_blank' rel="noreferrer" className='rounded-[10px] px-[20px] py-[5px] text-center border-[2px] border-cognac border-solid mx-[5px] my-[20px] text-[18px] font-[500] text-light-black hover:text-cognac hover:border-black'>Resume</a>
+       <a href="https://docs.google.com/document/d/17VWFF5m_cvHnbpJJvJ1w3E_8J6MwqpypmGRMGRuzScE/export?format=pdf" className='rounded-[10px] px-[20px] py-[5px] text-center border-[2px] border-cognac border-solid mx-[5px] my-[20px] text-[18px] font-[500] text-light-black hover:text-cognac hover:border-black'>Resume</a>
 </ul>
     </div> 
   )
