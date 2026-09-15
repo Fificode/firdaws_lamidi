@@ -2,11 +2,14 @@ import hamxaa from "../assets/hamxaa.png";
 import tailwind from "../assets/tailwind.svg";
 import react from "../assets/react.svg";
 import js from "../assets/js.svg";
+import css from "../assets/css.svg";
+import sass from "../assets/sass.svg";
 // import ridefraser from "../assets/ridefraser.png";
 import typescript from "../assets/typescript.svg"
 import getbooks from "../assets/getbooks.png"
 import nextjs from "../assets/nextjs.svg"
 import ameerahlamidi from "../assets/ameerah-lamidi.png"
+import udacityportfolio from "../assets/udacity-portfolio.png"
 import html from "../assets/html.svg"
 import sandwichapp from "../assets/sandwichapp.png"
 import quizapp from "../assets/nimelssaDashboard.png"
@@ -34,6 +37,16 @@ GetBooks connects people who need books with those who have books they no longer
       "Hamxaa is an auto repair software designed to help automotive repair shops manage customer relationships, streamline operations, track service history, manage inventory, and improve customer retention through automation.",
     websiteLink: "https://hamxaa.com/",
   },
+  {
+    id: 3,
+    header: "Firdaws Lamidi's Udacity Portfolio",
+    projectImage: udacityportfolio,
+    stack: [html, css, sass],
+    explanation:
+      "This project was completed as part of the Udacity Frontend Development Nanodegree program. It demonstrates the application of advanced CSS, animations, a preprocessor, and BEM. It ensures level AA accessibility compliance and serves as the capstone project for Course 3 of the program",
+       githubLink: "https://github.com/Fificode/udacity-portfolio-homepage",
+      websiteLink: "https://udacity-portfolio-firdaws-lamidi.netlify.app/",
+  },
   // {
   //   id: 2,
   //   header: "RideFraser",
@@ -45,7 +58,7 @@ GetBooks connects people who need books with those who have books they no longer
   // },
 
   {
-    id: 3,
+    id: 4,
     header: "Client's Portfolio",
     projectImage: ameerahlamidi ,
     stack: [tailwind, nextjs, typescript,],
@@ -56,7 +69,7 @@ GetBooks connects people who need books with those who have books they no longer
     
   },
   {
-    id: 4,
+    id: 5,
     header: "NIMELSSA Dashboard",
     projectImage: quizapp ,
     stack: [tailwind, vue, js],
@@ -66,7 +79,7 @@ GetBooks connects people who need books with those who have books they no longer
   
   },
   {
-    id: 5,
+    id: 6,
     header: "Sandwich Club App",
     projectImage: sandwichapp ,
     stack: [html, tailwind, react, js],
