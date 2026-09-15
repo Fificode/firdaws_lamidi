@@ -4,13 +4,17 @@ const Skills = () => {
   const data = [
     { id: 1, skill: "HTML" },
     { id: 2, skill: "CSS" },
-    { id: 3, skill: "Javascript" },
-    { id: 4, skill: "Typescript" },
+    { id: 3, skill: "JavaScript" },
+    { id: 4, skill: "TypeScript" },
     { id: 5, skill: "React Js" },
     { id: 6, skill: "Vue Js" },
     { id: 7, skill: "Next Js" },
     { id: 8, skill: "Tailwind CSS" },
     { id: 9, skill: "React Native" },
+    { id: 10, skill: "Sass" },
+    { id: 11, skill: "Bootstrap" },
+    { id: 12, skill: "R" },
+    { id: 13, skill: "Git" },
 
   ];
   return (
