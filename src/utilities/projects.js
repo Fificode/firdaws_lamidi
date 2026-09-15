@@ -20,7 +20,9 @@ export const projects = [
     projectImage: getbooks ,
     stack: [tailwind, react, typescript],
     explanation:
-      "An e-commerce store for buying and selling books based on user’s location",
+      `GetBooks is a digital platform designed to make buying and selling books — especially pre-owned or hard-to-find ones — simple, affordable, and accessible.
+
+GetBooks connects people who need books with those who have books they no longer use at a much lower cost. It also brings multiple bookstores online, allowing users to shop new books across different vendors in one place, with minimal stress around delivery or authenticity.`,
       websiteLink: "https://getbooks.ng/",
   },
   {
@@ -29,7 +31,7 @@ export const projects = [
     projectImage: hamxaa ,
     stack: [tailwind, react, js],
     explanation:
-      "Hamxaa is an Auto Repair software designed to help automotive repair shops manage customer relationships, streamline operations, track service history, manage inventory, and improve customer retention through automation.",
+      "Hamxaa is an auto repair software designed to help automotive repair shops manage customer relationships, streamline operations, track service history, manage inventory, and improve customer retention through automation.",
     websiteLink: "https://hamxaa.com/",
   },
   // {
