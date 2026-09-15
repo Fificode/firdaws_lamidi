@@ -5,6 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { MdMailOutline } from "react-icons/md";
 import { BsMedium } from "react-icons/bs";
+import { FaBlogger } from "react-icons/fa";
 // import { FaXTwitter } from "react-icons/fa6";
 // import { FaInstagram } from "react-icons/fa";
 
@@ -44,6 +45,13 @@ const Header = () => {
         <BsMedium className="text-black w-[20px] h-[20px] md:w-[30px] md:h-[30px]" />
       ),
       href: "https://medium.com/@lamidifirdaws",
+    },
+    {
+      title: "Blogs",
+      icon: (
+        <FaBlogger className="text-black w-[20px] h-[20px] md:w-[30px] md:h-[30px]" />
+      ),
+      href: "https://firdawslamidi.wordpress.com/blog/",
     },
     // {
     //   title: "X (formerly known as Twitter)",
