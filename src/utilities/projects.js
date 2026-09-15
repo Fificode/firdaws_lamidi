@@ -10,6 +10,7 @@ import getbooks from "../assets/getbooks.png"
 import nextjs from "../assets/nextjs.svg"
 import ameerahlamidi from "../assets/ameerah-lamidi.png"
 import udacityportfolio from "../assets/udacity-portfolio.png"
+import firdawsjewels from "../assets/firdaws-jewels.png"
 import html from "../assets/html.svg"
 import sandwichapp from "../assets/sandwichapp.png"
 import quizapp from "../assets/nimelssaDashboard.png"
@@ -47,6 +48,16 @@ GetBooks connects people who need books with those who have books they no longer
        githubLink: "https://github.com/Fificode/udacity-portfolio-homepage",
       websiteLink: "https://udacity-portfolio-firdaws-lamidi.netlify.app/",
   },
+  {
+    id: 4,
+    header: "Firdaws Jewels",
+    projectImage: firdawsjewels ,
+    stack: [html, css],
+    explanation:
+      "This project was completed as part of the Udacity Frontend Development Nanodegree program. It demonstrates the application of HTML and CSS skills to design and build a responsive business landing page and serves as the capstone project for Course 2 of the program.",
+       githubLink: "https://github.com/Fificode/udacity-business-website",
+      websiteLink: "https://fificode.github.io/udacity-business-website/",
+  },
   // {
   //   id: 2,
   //   header: "RideFraser",
@@ -58,7 +69,7 @@ GetBooks connects people who need books with those who have books they no longer
   // },
 
   {
-    id: 4,
+    id: 5,
     header: "Client's Portfolio",
     projectImage: ameerahlamidi ,
     stack: [tailwind, nextjs, typescript,],
@@ -69,7 +80,7 @@ GetBooks connects people who need books with those who have books they no longer
     
   },
   {
-    id: 5,
+    id: 6,
     header: "NIMELSSA Dashboard",
     projectImage: quizapp ,
     stack: [tailwind, vue, js],
@@ -79,7 +90,7 @@ GetBooks connects people who need books with those who have books they no longer
   
   },
   {
-    id: 6,
+    id: 7,
     header: "Sandwich Club App",
     projectImage: sandwichapp ,
     stack: [html, tailwind, react, js],
