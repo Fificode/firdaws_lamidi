@@ -2,7 +2,7 @@ import hamxaa from "../assets/hamxaa.png";
 import tailwind from "../assets/tailwind.svg";
 import react from "../assets/react.svg";
 import js from "../assets/js.svg";
-import ridefraser from "../assets/ridefraser.png";
+// import ridefraser from "../assets/ridefraser.png";
 import typescript from "../assets/typescript.svg"
 import getbooks from "../assets/getbooks.png"
 import nextjs from "../assets/nextjs.svg"
@@ -14,8 +14,17 @@ import vue from "../assets/vue.png"
 
 
 export const projects = [
-  {
+   {
     id: 1,
+    header: "GetBooks NG",
+    projectImage: getbooks ,
+    stack: [tailwind, react, typescript],
+    explanation:
+      "An e-commerce store for buying and selling books based on user’s location",
+      websiteLink: "https://getbooks.ng/",
+  },
+  {
+    id: 2,
     header: "Hamxaa",
     projectImage: hamxaa ,
     stack: [tailwind, react, js],
@@ -23,26 +32,18 @@ export const projects = [
       "Hamxaa is an Auto Repair software designed to help automotive repair shops manage customer relationships, streamline operations, track service history, manage inventory, and improve customer retention through automation.",
     websiteLink: "https://hamxaa.com/",
   },
-  {
-    id: 2,
-    header: "RideFraser",
-    projectImage: ridefraser ,
-    stack: [tailwind, react, js],
-    explanation:
-      "RideFraser helps Nigerian e-commerce businesses automate and simplify their logistics.",
-      websiteLink: "https://www.ridefraser.com/",
-  },
+  // {
+  //   id: 2,
+  //   header: "RideFraser",
+  //   projectImage: ridefraser ,
+  //   stack: [tailwind, react, js],
+  //   explanation:
+  //     "RideFraser helps Nigerian e-commerce businesses automate and simplify their logistics.",
+  //     websiteLink: "https://www.ridefraser.com/",
+  // },
+
   {
     id: 3,
-    header: "GetBooks NG",
-    projectImage: getbooks ,
-    stack: [tailwind, react, typescript],
-    explanation:
-      "An e-commerce store for buying and selling books based on user’s location",
-      websiteLink: "https://beta.getbooks.ng/",
-  },
-  {
-    id: 4,
     header: "Client's Portfolio",
     projectImage: ameerahlamidi ,
     stack: [tailwind, nextjs, typescript,],
@@ -53,7 +54,7 @@ export const projects = [
     
   },
   {
-    id: 5,
+    id: 4,
     header: "NIMELSSA Dashboard",
     projectImage: quizapp ,
     stack: [tailwind, vue, js],
@@ -63,7 +64,7 @@ export const projects = [
   
   },
   {
-    id: 6,
+    id: 5,
     header: "Sandwich Club App",
     projectImage: sandwichapp ,
     stack: [html, tailwind, react, js],
