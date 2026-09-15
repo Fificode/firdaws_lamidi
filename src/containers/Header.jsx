@@ -110,7 +110,7 @@ const Header = () => {
               },
             }}
           >
-            <span>Front end Developer</span>
+            <span>Frontend Developer</span>
             <span>Technical Writer</span>
           </TextLoop>
         </div>
